@@ -1,6 +1,7 @@
 /* Navbar styling */
 header nav {
   background-color: rgba(255, 255, 255, 0.95);
+  /* background-color: #0d1b2a; */
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 0;
@@ -78,5 +79,7 @@ nav a.nav-link:hover::after {
 
 /* footer */
 .footer-custom {
-  background-color: #0d1b2a; /* your hex color */
+  /* background-color: #0d1b2a;  */
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }

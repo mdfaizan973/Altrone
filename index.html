@@ -18,7 +18,86 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <footer class="footer-custom text-white py-5 mt-5">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <!-- Left: Logo -->
+          <a class="navbar-brand d-flex align-items-center me-3" href="#">
+            <div class="logo-box me-2">E</div>
+            <span class="fw-bold fs-5 text-dark">Fizzy Cloths</span>
+          </a>
+
+          <!-- Desktop navigation links -->
+          <ul class="navbar-nav d-none d-md-flex flex-row me-auto">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right: Search, Cart, Mobile Toggle -->
+          <div
+            class="d-flex align-items-center flex-grow-1 flex-md-grow-0 ms-md-3"
+          >
+            <!-- Search bar -->
+            <form class="position-relative flex-grow-1 me-3">
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search products..."
+              />
+              <i class="bi bi-search search-icon"></i>
+            </form>
+
+            <!-- Cart icon -->
+            <button
+              class="btn btn-outline-secondary position-relative rounded-circle me-2"
+            >
+              <i class="bi bi-cart-fill fs-5"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge"
+              >
+                3
+              </span>
+            </button>
+
+            <!-- Mobile menu toggle -->
+            <button
+              class="navbar-toggler ms-2 d-md-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobileMenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile navigation menu -->
+        <div class="collapse d-md-none" id="mobileMenu">
+          <ul class="navbar-nav flex-column px-3 mt-2">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Footer -->
+    <footer class="footer-custom py-5 mt-5">
       <div class="container py-5">
         <div class="row">
           <!-- Brand -->
@@ -45,41 +124,32 @@
               Quality products, exceptional service.
             </p>
             <div class="d-flex gap-3">
-              <a href="#" class="text-light"
-                ><i class="bi bi-twitter fs-5"></i
-              ></a>
-              <a href="#" class="text-light"
-                ><i class="bi bi-facebook fs-5"></i
-              ></a>
-              <a href="#" class="text-light"
-                ><i class="bi bi-instagram fs-5"></i
-              ></a>
+              <a href="#" class=""><i class="bi bi-twitter fs-5"></i></a>
+              <a href="#" class=""><i class="bi bi-facebook fs-5"></i></a>
+              <a href="#" class=""><i class="bi bi-instagram fs-5"></i></a>
             </div>
           </div>
 
-          <!-- Links -->
           <div class="col-md-6 mb-4">
             <div class="row">
               <div class="col-6">
                 <h5 class="text-uppercase small">Shop</h5>
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#" class="text-light text-decoration-none small"
-                      >New Arrivals</a
-                    >
+                    <a href="#" class="text-decoration-none small">
+                      New Arrivals
+                    </a>
                   </li>
                   <li>
-                    <a href="#" class="text-light text-decoration-none small"
+                    <a href="#" class="text-decoration-none small"
                       >Best Sellers</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-light text-decoration-none small"
-                      >Clothing</a
-                    >
+                    <a href="#" class="text-decoration-none small">Clothing</a>
                   </li>
                   <li>
-                    <a href="#" class="text-light text-decoration-none small"
+                    <a href="#" class="text-decoration-none small"
                       >Electronics</a
                     >
                   </li>
@@ -89,31 +159,24 @@
                 <h5 class="text-uppercase small">Support</h5>
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#" class="text-light text-decoration-none small"
+                    <a href="#" class="text-decoration-none small"
                       >Contact Us</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-light text-decoration-none small"
-                      >FAQ</a
-                    >
+                    <a href="#" class="text-decoration-none small">FAQ</a>
                   </li>
                   <li>
-                    <a href="#" class="text-light text-decoration-none small"
-                      >Shipping</a
-                    >
+                    <a href="#" class="text-decoration-none small">Shipping</a>
                   </li>
                   <li>
-                    <a href="#" class="text-light text-decoration-none small"
-                      >Returns</a
-                    >
+                    <a href="#" class="text-decoration-none small">Returns</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- Newsletter -->
           <div class="col-md-3 mb-4">
             <h5 class="text-uppercase small">Subscribe</h5>
             <p class="small">
@@ -122,7 +185,7 @@
             <form class="d-flex flex-column gap-2">
               <input
                 type="email"
-                class="form-control form-control-sm text-white border-0"
+                class="form-control form-control-sm text-white border-1"
                 placeholder="Enter your email"
               />
               <button
@@ -135,7 +198,6 @@
           </div>
         </div>
 
-        <!-- Bottom -->
         <div
           class="border-top border-light mt-4 pt-3 text-center small text-light"
         >
