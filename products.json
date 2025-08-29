@@ -7,12 +7,12 @@
             "title": "Men Printed Polo Neck Polyester Blue T-Shirt",
             "name": "TShirt",
             "price": "59",
-            "description": "A comfortable and stylish t-shirt for everyday wear.",
             "oldPrice": "87.98",
             "discount": "20%",
             "category": "Jeans",
-            "rating": 4.5,
+            "rating": 4,
             "totalCustomerReviews": 455,
+            "description": "A comfortable and stylish t-shirt for everyday wear. Made from high-quality cotton fabric, this classic t-shirt offers a relaxed fit and is perfect for casual occasions.",
             "customerFeedback": [
                 {
                     "user": "Eve",
@@ -43,12 +43,12 @@
             "title": "Men Colorblock Round Neck Cotton Blend Blue T-Shirt",
             "name": "TShirt",
             "price": "58",
-            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts.",
             "oldPrice": "79.47",
             "discount": "20%",
             "category": "Track Pants",
-            "rating": 4.4,
+            "rating": 4,
             "totalCustomerReviews": 68,
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking fabric, lightweight and breathable for maximum airflow, making it perfect for sports or casual outings.",
             "customerFeedback": [
                 {
                     "user": "Bob",
@@ -66,17 +66,45 @@
         },
         {
             "id": 3,
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/l/k/y/l-t650-nbwh-eyebogler-original-imaghqfpyrkhkhy5.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Striped Round Neck Cotton Blend Blue T-Shirt",
+            "name": "TShirt",
+            "price": "40",
+            "oldPrice": "55.00",
+            "discount": "15%",
+            "category": "T-Shirts",
+            "rating": 3,
+            "totalCustomerReviews": 142,
+            "description": "Stylish striped round neck t-shirt made from breathable cotton blend fabric. Lightweight and durable, this tee is ideal for workouts, casual wear, and summer outings.",
+            "customerFeedback": [
+                {
+                    "user": "Eve",
+                    "comment": "Great quality for the price."
+                },
+                {
+                    "user": "Frank",
+                    "comment": "Very soft and comfortable material."
+                },
+                {
+                    "user": "Grace",
+                    "comment": "The fit was just perfect."
+                }
+            ]
+        },
+        {
+            "id": 4,
             "img1": "https://rukminim1.flixcart.com/image/832/832/l09w8sw0/shirt/w/1/v/xl-chinese-1-aidan-paul-original-imagc3gufjuhgs7g.jpeg?q=70",
             "gender": "mens",
             "title": "Men Regular Fit Solid Cut Away Collar Casual Shirt",
             "name": "Shirt",
             "price": "75",
-            "description": "Upgrade your wardrobe with our classic button-up shirt.",
             "oldPrice": "104.84",
             "discount": "18%",
             "category": "Jeans",
-            "rating": 4.8,
+            "rating": 4,
             "totalCustomerReviews": 318,
+            "description": "Upgrade your wardrobe with this classic solid cut-away collar shirt. Designed with premium cotton, it’s versatile for both formal occasions and relaxed casual outings.",
             "customerFeedback": [
                 {
                     "user": "Eve",
@@ -93,26 +121,22 @@
                 {
                     "user": "Diana",
                     "comment": "Perfect fit and stylish."
-                },
-                {
-                    "user": "Frank",
-                    "comment": "Good value for money."
                 }
             ]
         },
         {
-            "id": 4,
+            "id": 5,
             "img1": "https://rukminim1.flixcart.com/image/832/832/l3t2fm80/trouser/f/x/k/34-cz-truz-01-cazzba-original-imageupfzgng4wxg.jpeg?q=70",
             "gender": "mens",
             "title": "Men Slim Fit Blue Cotton Blend Trousers",
             "name": "Track Pant",
             "price": "60",
-            "description": "Experience comfort and style with our athletic track pants.",
             "oldPrice": "81.83",
             "discount": "10%",
-            "category": "T-Shirts",
-            "rating": 4.9,
+            "category": "Trousers",
+            "rating": 3,
             "totalCustomerReviews": 135,
+            "description": "Slim fit trousers made from a premium cotton blend. Comfortable and stylish with tapered legs, ribbed cuffs, and side pockets, perfect for daily wear or sports.",
             "customerFeedback": [
                 {
                     "user": "Jack",
@@ -120,7 +144,7 @@
                 },
                 {
                     "user": "Bob",
-                    "comment": "Fits perfectly, recommended."
+                    "comment": "Material feels premium and durable."
                 },
                 {
                     "user": "Grace",
@@ -131,108 +155,165 @@
                     "comment": "Love the color and fabric!"
                 }
             ]
-        }
-    ],
-    "products1": [
-        {
-            "img1": "https://rukminim1.flixcart.com/image/832/832/kybvo280/t-shirt/l/o/e/m-mmst07-mm-industri-original-imagah2hszxexesa.jpeg?q=70",
-            "gender": "mens",
-            "title": "Men Printed Polo Neck Polyester Blue T-Shirt",
-            "name": "TShirt",
-            "price": "59",
-            "description": "A comfortable and stylish t-shirt for everyday wear. Made from high-quality cotton fabric, this classic t-shirt offers a relaxed fit and is perfect for casual occasions. It features a crew neck and short sleeves, providing a timeless and versatile look. Available in various colors and sizes, this t-shirt is a wardrobe essential that pairs well with jeans, shorts, or chinos. Whether you're running errands or hanging out with friends, this classic t-shirt is a reliable choice.",
-            "id": 1
         },
         {
-            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/r/i/v/xxl-aks-0150-ausk-original-imagk4nyd4c4hwug.jpeg?q=70",
-            "gender": "mens",
-            "title": "Men Colorblock Round Neck Cotton Blend Blue T-Shirt",
-            "name": "TShirt",
-            "price": "58",
-            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
-            "id": 2
-        },
-        {
-            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/l/k/y/l-t650-nbwh-eyebogler-original-imaghqfpyrkhkhy5.jpeg?q=70",
-            "gender": "mens",
-            "title": "Men Striped Round Neck Cotton Blend Blue T-Shirt",
-            "name": "TShirt",
-            "price": "40",
-            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
-            "id": 3
-        },
-        {
-            "img1": "https://rukminim1.flixcart.com/image/832/832/l09w8sw0/shirt/w/1/v/xl-chinese-1-aidan-paul-original-imagc3gufjuhgs7g.jpeg?q=70",
-            "gender": "mens",
-            "title": "Men Regular Fit Solid Cut Away Collar Casual Shirt",
-            "name": "Shirt",
-            "price": "75",
-            "description": "Upgrade your wardrobe with our classic button-up shirt. Crafted from premium cotton fabric, this shirt offers a sophisticated and timeless look. The crisp collar and long sleeves provide a polished appearance, making it suitable for both formal and casual occasions. With its regular fit and comfortable feel, it offers all-day comfort and ease of movement. The button-up front allows for adjustable ventilation and styling options. Pair it with dress pants for a professional look or wear it untucked with jeans for a more relaxed vibe. Versatile and stylish, this classic button-up shirt is a must-have in every wardrobe.",
-            "id": 4
-        },
-        {
-            "img1": "https://rukminim1.flixcart.com/image/832/832/l3t2fm80/trouser/f/x/k/34-cz-truz-01-cazzba-original-imageupfzgng4wxg.jpeg?q=70",
-            "gender": "mens",
-            "title": "Men Slim Fit Blue Cotton Blend Trousers",
-            "name": "Track Pant",
-            "price": "60",
-            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
-            "id": 5
-        },
-        {
+            "id": 6,
             "img1": "https://rukminim1.flixcart.com/image/832/832/l59xq4w0/jean/p/4/m/32-black-plain-28-fosen-original-imagfzsyjtkbqhyw.jpeg?q=70",
             "gender": "mens",
             "title": "Men Slim Fit Blue Cotton Blend Trousers",
             "name": "Jeans",
             "price": "49",
-            "description": "Discover our slim fit denim jeans, the perfect blend of style and comfort. Made from high-quality denim fabric, these jeans offer a modern and flattering fit. The slim cut sits close to the body without feeling restrictive. With their versatile design, they can be dressed up or down for various occasions. Pair them with a casual t-shirt and sneakers for a laid-back look, or dress them up with a button-up shirt and dress shoes for a more polished ensemble. These jeans feature classic five-pocket styling and are available in different washes to suit your preference. Upgrade your denim collection with our slim fit jeans and experience timeless style and exceptional comfort.",
-            "id": 6
+            "oldPrice": "70.00",
+            "discount": "15%",
+            "category": "Jeans",
+            "rating": 4,
+            "totalCustomerReviews": 284,
+            "description": "Discover our slim fit denim jeans, the perfect blend of style and comfort. Made from high-quality denim fabric, these jeans offer a modern and flattering fit.",
+            "customerFeedback": [
+                {
+                    "user": "Eve",
+                    "comment": "Very comfortable for daily wear."
+                },
+                {
+                    "user": "Frank",
+                    "comment": "The stitching feels premium."
+                },
+                {
+                    "user": "Diana",
+                    "comment": "Perfect fit and stylish."
+                }
+            ]
         },
         {
+            "id": 7,
             "img1": "https://rukminim1.flixcart.com/image/832/832/kkh6zrk0/t-shirt/w/j/n/m-t344hs-whsb-new-eyebogler-original-imafztgjdpkvr8ab.jpeg?q=70",
             "gender": "mens",
             "title": "Men Checkered Polo Neck Cotton Blend White, Blue T-Shirt",
             "name": "TShirt",
             "price": "44",
-            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
-            "id": 7
+            "oldPrice": "63.00",
+            "discount": "12%",
+            "category": "T-Shirts",
+            "rating": 3,
+            "totalCustomerReviews": 195,
+            "description": "A stylish checkered polo neck t-shirt made from premium cotton blend. Breathable, lightweight, and perfect for casual outings or semi-formal wear.",
+            "customerFeedback": [
+                {
+                    "user": "Jack",
+                    "comment": "Looks amazing with jeans."
+                },
+                {
+                    "user": "Grace",
+                    "comment": "Fabric is soft and comfy."
+                }
+            ]
         },
         {
+            "id": 8,
             "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/track-pant/d/y/v/-original-imagpzdznx6njfjr.jpeg?q=70",
             "gender": "mens",
             "title": "Pants OH Men Solid Green Track Pants",
             "name": "Track Pant",
             "price": "59",
-            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
-            "id": 8
+            "oldPrice": "79.00",
+            "discount": "20%",
+            "category": "Track Pants",
+            "rating": 4,
+            "totalCustomerReviews": 101,
+            "description": "Athletic solid green track pants designed for comfort. Moisture-wicking, breathable, and ideal for workouts, running, or casual wear.",
+            "customerFeedback": [
+                {
+                    "user": "Alice",
+                    "comment": "Very durable and comfortable."
+                },
+                {
+                    "user": "Bob",
+                    "comment": "Perfect for gym sessions."
+                }
+            ]
         },
         {
+            "id": 9,
             "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/track-pant/w/u/a/m-hpsbl210-hps-sports-original-imagzggzhe2cggtc.jpeg?q=70",
             "gender": "mens",
             "title": "Men Solid Grey Track Pants",
             "name": "Track Pant",
             "price": "89",
-            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
-            "id": 9
+            "oldPrice": "110.00",
+            "discount": "10%",
+            "category": "Track Pants",
+            "rating": 5,
+            "totalCustomerReviews": 257,
+            "description": "Men’s solid grey track pants with elastic waistband and tapered design. Modern fit, comfortable, and stylish for both workouts and casual use.",
+            "customerFeedback": [
+                {
+                    "user": "Ivy",
+                    "comment": "Love the fit and color."
+                },
+                {
+                    "user": "Charlie",
+                    "comment": "Great value for money."
+                },
+                {
+                    "user": "Diana",
+                    "comment": "Premium quality fabric."
+                }
+            ]
         },
         {
+            "id": 13,
             "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/shirt/b/3/2/xxl-st10-vebnor-original-imagzdu7azhy9tvf.jpeg?q=70",
             "gender": "mens",
             "title": "Men Regular Fit Printed Spread Collar Casual Shirt",
             "name": "Shirt",
             "price": "66",
-            "description": "Upgrade your wardrobe with our classic button-up shirt. Crafted from premium cotton fabric, this shirt offers a sophisticated and timeless look. The crisp collar and long sleeves provide a polished appearance, making it suitable for both formal and casual occasions. With its regular fit and comfortable feel, it offers all-day comfort and ease of movement. The button-up front allows for adjustable ventilation and styling options. Pair it with dress pants for a professional look or wear it untucked with jeans for a more relaxed vibe. Versatile and stylish, this classic button-up shirt is a must-have in every wardrobe.",
-            "id": 13
+            "oldPrice": "88.00",
+            "discount": "15%",
+            "category": "Shirts",
+            "rating": 4,
+            "totalCustomerReviews": 144,
+            "description": "Regular fit printed spread collar shirt crafted from premium cotton fabric. Comfortable, versatile, and ideal for formal as well as casual wear.",
+            "customerFeedback": [
+                {
+                    "user": "Frank",
+                    "comment": "Good design, fits well."
+                },
+                {
+                    "user": "Grace",
+                    "comment": "Stylish and breathable."
+                }
+            ]
         },
         {
+            "id": 14,
             "img1": "https://rukminim1.flixcart.com/image/832/832/l5h2xe80/shirt/7/s/h/xs-juhg-try-this-original-imagg4wyccyjm3jf.jpeg?q=70",
             "gender": "mens",
             "title": "Men Slim Fit Color Block Mandarin Collar Casual Shirt",
             "name": "Shirt",
             "price": "55",
-            "description": "Upgrade your wardrobe with our classic button-up shirt. Crafted from premium cotton fabric, this shirt offers a sophisticated and timeless look. The crisp collar and long sleeves provide a polished appearance, making it suitable for both formal and casual occasions. With its regular fit and comfortable feel, it offers all-day comfort and ease of movement. The button-up front allows for adjustable ventilation and styling options. Pair it with dress pants for a professional look or wear it untucked with jeans for a more relaxed vibe. Versatile and stylish, this classic button-up shirt is a must-have in every wardrobe.",
-            "id": 14
-        },
+            "oldPrice": "73.00",
+            "discount": "12%",
+            "category": "Shirts",
+            "rating": 3,
+            "totalCustomerReviews": 89,
+            "description": "Slim fit mandarin collar shirt with modern color block design. Lightweight, soft cotton fabric ensures comfort and style for casual occasions.",
+            "customerFeedback": [
+                {
+                    "user": "Bob",
+                    "comment": "Good quality material."
+                },
+                {
+                    "user": "Eve",
+                    "comment": "Looks premium for the price."
+                },
+                {
+                    "user": "Alice",
+                    "comment": "Comfortable and stylish."
+                }
+            ]
+        }
+    ],
+    "products1": [
         {
             "img1": "https://olavi.in/cdn/shop/products/2_17c61faa-6631-494b-af29-4e2ce5b11a4e_360x.jpg?v=1675448338",
             "gender": "womens",

@@ -37,25 +37,37 @@ features.forEach((feature) => {
     `;
 });
 
+let productsList = [];
+let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
 $(document).ready(function () {
+  renderCart();
+
   $.ajax({
-    url: "products.json", // <-- your JSON file
+    url: "products.json",
     method: "GET",
     dataType: "json",
     success: function (data) {
-      let products = data.products;
+      productsList = data.products;
       let html = "";
 
-      $.each(products, function (index, product) {
+      $.each(productsList, function (index, product) {
         html += `
        <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
           <div class="card border-0 shadow card-hover h-100">
-            <img src="${product.img1}" class="product-image rounded-2 cursor-pointer" alt="${product.title}" data-id=${product.id}>
+            <img src="${
+              product.img1
+            }" class="product-image rounded-2 cursor-pointer" alt="${
+          product.title
+        }" data-id=${product.id}>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-start">
                 <div>
                   <h5 class="card-title">${product.title}</h5>
-                  <p class="card-text">ID: ${product.id}</p>
+                  <p class="card-text">
+                  <span class="text-warning">${renderStars(
+                    product.rating || 1
+                  )} </span> </p>
                 </div>
                 <i class="bi bi-bookmark-plus fs-4"></i>
               </div>
@@ -64,7 +76,7 @@ $(document).ready(function () {
               <div class="col-4">
                 <h5>$${product.price}</h5>
               </div>
-              <div class="col-8">
+              <div class="add-to-cart-btn col-8" data-id=${product.id}>
                 <a href="#" class="btn btn-dark w-100 p-2 rounded-0 text-warning">ADD TO CART</a>
               </div>
             </div>
@@ -75,6 +87,7 @@ $(document).ready(function () {
 
       // Append all cards at once
       $("#product-list").html(html);
+      updateCartCount();
     },
     error: function () {
       $("#product-list").html(
@@ -84,41 +97,11 @@ $(document).ready(function () {
   });
 });
 
-const products = [
-  {
-    id: 1,
-    img1: "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/8/1/9/xl-white-chex-shirt-mentific-original-imahc5ha7nyxxmvu.jpeg?q=70",
-    title: "Checked White Shirt",
-    description: "Classic white shirt with modern check pattern.",
-    price: "29.99",
-    oldPrice: "39.99",
-    discount: "25%",
-    category: "Shirts",
-    rating: 4,
-    totalCustomerReviews: 85,
-    customerFeedback: [
-      { user: "Alice", comment: "Excellent quality!" },
-      { user: "Bob", comment: "Fits perfectly." },
-      { user: "Charlie", comment: "Worth the price." },
-    ],
-  },
-  {
-    id: 2,
-    img1: "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/n/0/m/l-polo-8015-kajaru-original-imaherkhrkpnzzjw.jpeg?q=70",
-    title: "Black Cotton T-Shirt",
-    description: "Comfortable everyday black t-shirt in pure cotton.",
-    price: "15.99",
-    oldPrice: "20.99",
-    discount: "24%",
-    category: "T-Shirts",
-    rating: 5,
-    totalCustomerReviews: 120,
-    customerFeedback: [
-      { user: "Alice", comment: "Great quality and fit!" },
-      { user: "Bob", comment: "Very comfortable for daily wear." },
-    ],
-  },
-];
+function updateCartCount() {
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  console.log(cartItems);
+  $(".cart-count").text(cartItems.length);
+}
 
 function renderStars(rating) {
   let stars = "";
@@ -134,7 +117,7 @@ function renderStars(rating) {
 // Details
 $(document).on("click", ".product-image", function () {
   const idProduct = parseInt($(this).data("id"));
-  const product = products.find((p) => p.id === idProduct);
+  const product = productsList.find((p) => p.id === idProduct);
 
   if (product) {
     $("#productImage").attr("src", product.img1);
@@ -144,7 +127,7 @@ $(document).on("click", ".product-image", function () {
     $("#productPrice").text("$" + product.price);
     $("#productOldPrice").text(product.oldPrice ? "$" + product.oldPrice : "");
     $("#productDiscount").text(product.discount ? product.discount : "");
-    $("#productRating").html(renderStars(product.rating || 4));
+    $("#productRating").html(renderStars(product.rating || 1));
     $("#productRatingValue").text(
       "(" + (product.totalCustomerReviews || 0) + " reviews)"
     );
@@ -184,3 +167,63 @@ function renderFeedback(reviews = []) {
     });
   }
 }
+
+// cart UI
+function renderCart() {
+  const $cartList = $("#cart-items-list");
+  $cartList.empty();
+  const items = JSON.parse(localStorage.getItem("cartItems")) || [];
+  console.log(174, items);
+  items.forEach((product) => {
+    const card = $(`
+                <div class="card shadow-sm border-0 rounded-3">
+                  <div class="card-body d-flex align-items-center">
+                    <img src="${product.img1}" alt="${product.title}" class="product-image rounded me-3 border" data-id="${product.id}" style="width:60px; height:60px; object-fit:cover;">
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1 fw-semibold">${product.title}</h6>
+                      <p class="text-muted small mb-0">$ ${product.price}</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-danger ms-3 remove-item" data-id="${product.id}"><i class="bi bi-trash"></i></button>
+                  </div>
+                </div>`);
+    $cartList.append(card);
+  });
+  updateCartCount();
+}
+
+// Submit Cart
+$(document).on("click", ".add-to-cart-btn", function (e) {
+  e.preventDefault();
+
+  const idProduct = parseInt($(this).data("id"));
+  let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  const isPresent = cartItems.some((ele, i) => ele.id == idProduct);
+
+  if (isPresent) {
+    alert("Already Present in the Cart!");
+  } else {
+    const product = productsList.find((p) => p.id === idProduct);
+
+    if (product) {
+      cartItems.push(product);
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      renderCart();
+      updateCartCount();
+      alert("Item addd to Cart!");
+    }
+  }
+});
+
+// Remove from cart with slide animation
+$(document).on("click", ".remove-item", function () {
+  const idToRemove = parseInt($(this).data("id"));
+  const $card = $(this).closest(".card");
+
+  $card.slideUp(300, function () {
+    $card.remove();
+    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    cartItems = cartItems.filter((item) => item.id !== idToRemove);
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    updateCartCount();
+  });
+});
