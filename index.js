@@ -181,7 +181,6 @@ function renderCart() {
   const items = JSON.parse(localStorage.getItem("cartItems")) || [];
 
   if (items.length === 0) {
-    // show empty cart message
     $cartList.append(`
       <div id="emptyCart" class="text-center text-muted py-4">
         <i class="bi bi-cart-x display-4"></i>
@@ -189,7 +188,6 @@ function renderCart() {
       </div>
     `);
   } else {
-    // render items
     items.forEach((product) => {
       total += parseFloat(product.price);
       const card = $(`
