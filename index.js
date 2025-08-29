@@ -180,27 +180,42 @@ function renderCart() {
   let total = 0;
   const items = JSON.parse(localStorage.getItem("cartItems")) || [];
 
-  items.forEach((product) => {
-    total += parseFloat(product.price);
-    const card = $(`
-                <div class="card shadow-sm border-0 rounded-3">
-                  <div class="card-body d-flex align-items-center">
-                    <img src="${product.img1}" alt="${product.title}" class="product-image rounded me-3 border" data-id="${product.id}" style="width:60px; height:60px; object-fit:cover;">
-                    <div class="flex-grow-1">
-                      <h6 class="mb-1 fw-semibold">${product.title}</h6>
-                      <p class="text-muted small mb-0">$ ${product.price}</p>
-                    </div>
-                    <button class="btn btn-sm btn-outline-danger ms-3 remove-item" data-id="${product.id}"><i class="bi bi-trash"></i></button>
-                  </div>
-                </div>`);
-    $cartList.append(card);
-  });
+  if (items.length === 0) {
+    // show empty cart message
+    $cartList.append(`
+      <div id="emptyCart" class="text-center text-muted py-4">
+        <i class="bi bi-cart-x display-4"></i>
+        <p class="mt-2">Your cart is empty</p>
+      </div>
+    `);
+  } else {
+    // render items
+    items.forEach((product) => {
+      total += parseFloat(product.price);
+      const card = $(`
+        <div class="card shadow-sm border-0 rounded-3 mb-2">
+          <div class="card-body d-flex align-items-center">
+            <img src="${product.img1}" alt="${product.title}" 
+              class="product-image rounded me-3 border" 
+              data-id="${product.id}" 
+              style="width:60px; height:60px; object-fit:cover;">
+            <div class="flex-grow-1">
+              <h6 class="mb-1 fw-semibold">${product.title}</h6>
+              <p class="text-muted small mb-0">$ ${product.price}</p>
+            </div>
+            <button class="btn btn-sm btn-outline-danger ms-3 remove-item" 
+              data-id="${product.id}">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>`);
+      $cartList.append(card);
+    });
+  }
 
   $("#cart-total").text(`${total.toFixed(2)}`);
   updateCartCount();
 }
-
-// .cart-total class name get the total of the cart
 
 // Submit Cart
 $(document).on("click", ".add-to-cart-btn", function (e) {
@@ -244,4 +259,23 @@ $(document).on("click", ".remove-item", function () {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     updateCartCount();
   });
+});
+
+$(document).on("click", "#checkout", function () {
+  const items = JSON.parse(localStorage.getItem("cartItems")) || [];
+  if (items.length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+
+  // Show order success modal
+  $("#orderSuccessModal").modal("show");
+});
+
+$(document).on("click", "#continueShopping", function () {
+  localStorage.removeItem("cartItems");
+  $("#cart-items-list").empty();
+  $(".cart-total").text("0");
+  updateCartCount();
+  window.location.reload();
 });

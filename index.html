@@ -118,7 +118,9 @@
             $ <span id="cart-total">0</span>
           </h5>
         </div>
-        <button class="btn btn-dark w-100 fw-semibold py-2">🛒 Checkout</button>
+        <button id="checkout" class="btn btn-dark w-100 fw-semibold py-2">
+          🛒 Checkout
+        </button>
       </div>
     </div>
 
@@ -173,13 +175,9 @@
       </div>
     </section>
 
-    <!-- Filter Section -->
-
     <!-- Products Grid -->
     <div class="container py-5">
-      <div class="row" id="product-list">
-        <!-- Products will be injected here -->
-      </div>
+      <div class="row" id="product-list"></div>
     </div>
 
     <!-- Product Modal -->
@@ -290,6 +288,40 @@
       </div>
     </div>
 
+    <!-- Order Success Modal -->
+    <div
+      class="modal fade"
+      id="orderSuccessModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-body text-center p-5">
+            <div class="mb-3">
+              <i
+                class="bi bi-check-circle-fill text-success"
+                style="font-size: 3rem"
+              ></i>
+            </div>
+            <h4 class="fw-bold">Order Successful 🎉</h4>
+            <p class="text-muted">
+              Thank you for your purchase! Your order has been placed
+              successfully.
+            </p>
+            <button
+              type="button"
+              class="btn btn-success w-100 mt-3"
+              data-bs-dismiss="modal"
+              id="continueShopping"
+            >
+              Continue Shopping
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer-custom py-5 mt-50">
       <div class="container py-5">
@@ -330,20 +362,22 @@
                 <h5 class="text-uppercase small">Shop</h5>
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#" class="text-decoration-none small">
+                    <a href="#" class="text-decoration-none small text-dark">
                       New Arrivals
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none small"
+                    <a href="#" class="text-decoration-none small text-dark"
                       >Best Sellers</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none small">Clothing</a>
+                    <a href="#" class="text-decoration-none small text-dark"
+                      >Clothing</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none small"
+                    <a href="#" class="text-decoration-none small text-dark"
                       >Electronics</a
                     >
                   </li>
@@ -353,18 +387,24 @@
                 <h5 class="text-uppercase small">Support</h5>
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#" class="text-decoration-none small"
+                    <a href="#" class="text-decoration-none small text-dark"
                       >Contact Us</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none small">FAQ</a>
+                    <a href="#" class="text-decoration-none small text-dark"
+                      >FAQ</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none small">Shipping</a>
+                    <a href="#" class="text-decoration-none small text-dark"
+                      >Shipping</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="text-decoration-none small">Returns</a>
+                    <a href="#" class="text-decoration-none small text-dark"
+                      >Returns</a
+                    >
                   </li>
                 </ul>
               </div>
