@@ -277,3 +277,7 @@ $(document).on("click", "#continueShopping", function () {
   updateCartCount();
   window.location.reload();
 });
+
+$(document).on("click", "#guide-btn-as-text", function () {
+  $("#userGuideModal").modal("show");
+});

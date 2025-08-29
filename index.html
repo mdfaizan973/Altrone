@@ -142,6 +142,16 @@
       </div>
     </section>
 
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <h6 class="fw-bold text-primary text-center px-3 mb-3 blink-text">
+        🚀 To use this application and know about the
+        <span class="text-success">features</span>, please go to the
+        <button id="guide-btn-as-text" class="text-danger fw-bold border-none">
+          User Guide ➡️
+        </button>
+      </h6>
+    </div>
+
     <div id="about"></div>
 
     <!-- why chose us -->
@@ -317,6 +327,57 @@
             >
               Continue Shopping
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Guide Modal -->
+    <div
+      class="modal fade"
+      id="userGuideModal"
+      tabindex="-1"
+      aria-labelledby="userGuideLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+          <!-- Header -->
+          <div class="modal-header bg-primary bg-gradient text-white">
+            <h5 class="modal-title fw-bold" id="userGuideLabel">
+              🚀 Welcome to the User Guide
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <p class="text-muted">
+              Here are some key features of this application:
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">✅ Easy navigation & clean UI</li>
+              <li class="list-group-item">⚡ Fast & responsive performance</li>
+              <li class="list-group-item">🔒 Secure authentication</li>
+              <li class="list-group-item">📊 Interactive dashboards</li>
+              <li class="list-group-item">🌐 Works on all devices</li>
+            </ul>
+          </div>
+
+          <!-- Footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success">Get Started</button>
           </div>
         </div>
       </div>
