@@ -1,0 +1,588 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "img1": "https://rukminim1.flixcart.com/image/832/832/kybvo280/t-shirt/l/o/e/m-mmst07-mm-industri-original-imagah2hszxexesa.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Printed Polo Neck Polyester Blue T-Shirt",
+            "name": "TShirt",
+            "price": "59",
+            "description": "A comfortable and stylish t-shirt for everyday wear.",
+            "oldPrice": "87.98",
+            "discount": "20%",
+            "category": "Jeans",
+            "rating": 4.5,
+            "totalCustomerReviews": 455,
+            "customerFeedback": [
+                {
+                    "user": "Eve",
+                    "comment": "Good value for money."
+                },
+                {
+                    "user": "Diana",
+                    "comment": "Perfect fit and stylish."
+                },
+                {
+                    "user": "Alice",
+                    "comment": "Good value for money."
+                },
+                {
+                    "user": "Diana",
+                    "comment": "Looks great for casual and office wear."
+                },
+                {
+                    "user": "Bob",
+                    "comment": "Excellent material and stitching."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/r/i/v/xxl-aks-0150-ausk-original-imagk4nyd4c4hwug.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Colorblock Round Neck Cotton Blend Blue T-Shirt",
+            "name": "TShirt",
+            "price": "58",
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts.",
+            "oldPrice": "79.47",
+            "discount": "20%",
+            "category": "Track Pants",
+            "rating": 4.4,
+            "totalCustomerReviews": 68,
+            "customerFeedback": [
+                {
+                    "user": "Bob",
+                    "comment": "Highly recommended!"
+                },
+                {
+                    "user": "Charlie",
+                    "comment": "Comfortable for workouts and casual wear."
+                },
+                {
+                    "user": "Diana",
+                    "comment": "Love the color and fabric!"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "img1": "https://rukminim1.flixcart.com/image/832/832/l09w8sw0/shirt/w/1/v/xl-chinese-1-aidan-paul-original-imagc3gufjuhgs7g.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Regular Fit Solid Cut Away Collar Casual Shirt",
+            "name": "Shirt",
+            "price": "75",
+            "description": "Upgrade your wardrobe with our classic button-up shirt.",
+            "oldPrice": "104.84",
+            "discount": "18%",
+            "category": "Jeans",
+            "rating": 4.8,
+            "totalCustomerReviews": 318,
+            "customerFeedback": [
+                {
+                    "user": "Eve",
+                    "comment": "Very comfortable for daily wear."
+                },
+                {
+                    "user": "Jack",
+                    "comment": "Good value for money."
+                },
+                {
+                    "user": "Frank",
+                    "comment": "Fits perfectly, recommended."
+                },
+                {
+                    "user": "Diana",
+                    "comment": "Perfect fit and stylish."
+                },
+                {
+                    "user": "Frank",
+                    "comment": "Good value for money."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "img1": "https://rukminim1.flixcart.com/image/832/832/l3t2fm80/trouser/f/x/k/34-cz-truz-01-cazzba-original-imageupfzgng4wxg.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Slim Fit Blue Cotton Blend Trousers",
+            "name": "Track Pant",
+            "price": "60",
+            "description": "Experience comfort and style with our athletic track pants.",
+            "oldPrice": "81.83",
+            "discount": "10%",
+            "category": "T-Shirts",
+            "rating": 4.9,
+            "totalCustomerReviews": 135,
+            "customerFeedback": [
+                {
+                    "user": "Jack",
+                    "comment": "Fits perfectly, recommended."
+                },
+                {
+                    "user": "Bob",
+                    "comment": "Fits perfectly, recommended."
+                },
+                {
+                    "user": "Grace",
+                    "comment": "Comfortable for workouts and casual wear."
+                },
+                {
+                    "user": "Ivy",
+                    "comment": "Love the color and fabric!"
+                }
+            ]
+        }
+    ],
+    "products1": [
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/kybvo280/t-shirt/l/o/e/m-mmst07-mm-industri-original-imagah2hszxexesa.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Printed Polo Neck Polyester Blue T-Shirt",
+            "name": "TShirt",
+            "price": "59",
+            "description": "A comfortable and stylish t-shirt for everyday wear. Made from high-quality cotton fabric, this classic t-shirt offers a relaxed fit and is perfect for casual occasions. It features a crew neck and short sleeves, providing a timeless and versatile look. Available in various colors and sizes, this t-shirt is a wardrobe essential that pairs well with jeans, shorts, or chinos. Whether you're running errands or hanging out with friends, this classic t-shirt is a reliable choice.",
+            "id": 1
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/r/i/v/xxl-aks-0150-ausk-original-imagk4nyd4c4hwug.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Colorblock Round Neck Cotton Blend Blue T-Shirt",
+            "name": "TShirt",
+            "price": "58",
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
+            "id": 2
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/l/k/y/l-t650-nbwh-eyebogler-original-imaghqfpyrkhkhy5.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Striped Round Neck Cotton Blend Blue T-Shirt",
+            "name": "TShirt",
+            "price": "40",
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
+            "id": 3
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/l09w8sw0/shirt/w/1/v/xl-chinese-1-aidan-paul-original-imagc3gufjuhgs7g.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Regular Fit Solid Cut Away Collar Casual Shirt",
+            "name": "Shirt",
+            "price": "75",
+            "description": "Upgrade your wardrobe with our classic button-up shirt. Crafted from premium cotton fabric, this shirt offers a sophisticated and timeless look. The crisp collar and long sleeves provide a polished appearance, making it suitable for both formal and casual occasions. With its regular fit and comfortable feel, it offers all-day comfort and ease of movement. The button-up front allows for adjustable ventilation and styling options. Pair it with dress pants for a professional look or wear it untucked with jeans for a more relaxed vibe. Versatile and stylish, this classic button-up shirt is a must-have in every wardrobe.",
+            "id": 4
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/l3t2fm80/trouser/f/x/k/34-cz-truz-01-cazzba-original-imageupfzgng4wxg.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Slim Fit Blue Cotton Blend Trousers",
+            "name": "Track Pant",
+            "price": "60",
+            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
+            "id": 5
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/l59xq4w0/jean/p/4/m/32-black-plain-28-fosen-original-imagfzsyjtkbqhyw.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Slim Fit Blue Cotton Blend Trousers",
+            "name": "Jeans",
+            "price": "49",
+            "description": "Discover our slim fit denim jeans, the perfect blend of style and comfort. Made from high-quality denim fabric, these jeans offer a modern and flattering fit. The slim cut sits close to the body without feeling restrictive. With their versatile design, they can be dressed up or down for various occasions. Pair them with a casual t-shirt and sneakers for a laid-back look, or dress them up with a button-up shirt and dress shoes for a more polished ensemble. These jeans feature classic five-pocket styling and are available in different washes to suit your preference. Upgrade your denim collection with our slim fit jeans and experience timeless style and exceptional comfort.",
+            "id": 6
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/kkh6zrk0/t-shirt/w/j/n/m-t344hs-whsb-new-eyebogler-original-imafztgjdpkvr8ab.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Checkered Polo Neck Cotton Blend White, Blue T-Shirt",
+            "name": "TShirt",
+            "price": "44",
+            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
+            "id": 7
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/track-pant/d/y/v/-original-imagpzdznx6njfjr.jpeg?q=70",
+            "gender": "mens",
+            "title": "Pants OH Men Solid Green Track Pants",
+            "name": "Track Pant",
+            "price": "59",
+            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
+            "id": 8
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/track-pant/w/u/a/m-hpsbl210-hps-sports-original-imagzggzhe2cggtc.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Solid Grey Track Pants",
+            "name": "Track Pant",
+            "price": "89",
+            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
+            "id": 9
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/shirt/b/3/2/xxl-st10-vebnor-original-imagzdu7azhy9tvf.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Regular Fit Printed Spread Collar Casual Shirt",
+            "name": "Shirt",
+            "price": "66",
+            "description": "Upgrade your wardrobe with our classic button-up shirt. Crafted from premium cotton fabric, this shirt offers a sophisticated and timeless look. The crisp collar and long sleeves provide a polished appearance, making it suitable for both formal and casual occasions. With its regular fit and comfortable feel, it offers all-day comfort and ease of movement. The button-up front allows for adjustable ventilation and styling options. Pair it with dress pants for a professional look or wear it untucked with jeans for a more relaxed vibe. Versatile and stylish, this classic button-up shirt is a must-have in every wardrobe.",
+            "id": 13
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/l5h2xe80/shirt/7/s/h/xs-juhg-try-this-original-imagg4wyccyjm3jf.jpeg?q=70",
+            "gender": "mens",
+            "title": "Men Slim Fit Color Block Mandarin Collar Casual Shirt",
+            "name": "Shirt",
+            "price": "55",
+            "description": "Upgrade your wardrobe with our classic button-up shirt. Crafted from premium cotton fabric, this shirt offers a sophisticated and timeless look. The crisp collar and long sleeves provide a polished appearance, making it suitable for both formal and casual occasions. With its regular fit and comfortable feel, it offers all-day comfort and ease of movement. The button-up front allows for adjustable ventilation and styling options. Pair it with dress pants for a professional look or wear it untucked with jeans for a more relaxed vibe. Versatile and stylish, this classic button-up shirt is a must-have in every wardrobe.",
+            "id": 14
+        },
+        {
+            "img1": "https://olavi.in/cdn/shop/products/2_17c61faa-6631-494b-af29-4e2ce5b11a4e_360x.jpg?v=1675448338",
+            "gender": "womens",
+            "title": "BOO PRINTED CROP TOP",
+            "name": "TShirt",
+            "price": "43",
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
+            "id": 15
+        },
+        {
+            "img1": "https://olavi.in/cdn/shop/products/M7A1514_120x.jpg?v=1677218201",
+            "gender": "womens",
+            "title": "CHERRY BERRY - WOMENS HALF SLEEVES T- SHIRT",
+            "name": "TShirt",
+            "price": "39",
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
+            "id": 16
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/track-pant/7/u/i/l-musk2pcssolidlowers-lady-willington-original-imagzvgyqzak9dhk.jpeg?q=70",
+            "gender": "womens",
+            "title": "Pack of 2 Women Solid Black, Pink Track Pants",
+            "name": "Track Pant",
+            "price": "66",
+            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
+            "id": 17
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/shirt/b/k/m/xxl-255-j-turritopsis-original-imagprxenfthnzpj.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Boxy Fit Solid Lapel Collar Casual Shirt",
+            "name": "Shirt",
+            "price": "55",
+            "description": "Upgrade your wardrobe with our classic button-up shirt. Crafted from premium cotton fabric, this shirt offers a sophisticated and timeless look. The crisp collar and long sleeves provide a polished appearance, making it suitable for both formal and casual occasions. With its regular fit and comfortable feel, it offers all-day comfort and ease of movement. The button-up front allows for adjustable ventilation and styling options. Pair it with dress pants for a professional look or wear it untucked with jeans for a more relaxed vibe. Versatile and stylish, this classic button-up shirt is a must-have in every wardrobe.",
+            "id": 18
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/128/128/xif0q/track-pant/3/g/f/4xl-wm19-jog-basic-fern-alan-jones-original-imagmeqbf6hnehx8.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Solid Green Track Pants",
+            "name": "Track Pant",
+            "price": "49",
+            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
+            "id": 19
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/shirt/6/l/v/s-4905-07-funday-fashion-original-imagms68f58az6m9.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Regular Fit Self Design Casual Shirt",
+            "name": "Shirt",
+            "price": "88",
+            "description": "Upgrade your wardrobe with our classic button-up shirt. Crafted from premium cotton fabric, this shirt offers a sophisticated and timeless look. The crisp collar and long sleeves provide a polished appearance, making it suitable for both formal and casual occasions. With its regular fit and comfortable feel, it offers all-day comfort and ease of movement. The button-up front allows for adjustable ventilation and styling options. Pair it with dress pants for a professional look or wear it untucked with jeans for a more relaxed vibe. Versatile and stylish, this classic button-up shirt is a must-have in every wardrobe.",
+            "id": 20
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/kcjexe80/shirt/1/j/u/m-ttsh000875-tokyo-talkies-original-imaftn24zzc3z3zw.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Regular Fit Checkered Spread Collar Casual Shirt",
+            "name": "Shirt",
+            "price": "52",
+            "description": "Upgrade your wardrobe with our classic button-up shirt. Crafted from premium cotton fabric, this shirt offers a sophisticated and timeless look. The crisp collar and long sleeves provide a polished appearance, making it suitable for both formal and casual occasions. With its regular fit and comfortable feel, it offers all-day comfort and ease of movement. The button-up front allows for adjustable ventilation and styling options. Pair it with dress pants for a professional look or wear it untucked with jeans for a more relaxed vibe. Versatile and stylish, this classic button-up shirt is a must-have in every wardrobe.",
+            "id": 21
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/1/d/2/s-3813-the-dry-state-original-imagcfh833gdjeem-bb.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Regular Fit Checkered Spread Collar Casual Shirt",
+            "name": "TShirt",
+            "price": "55",
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
+            "id": 22
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/r/6/m/xl-os-winner-786-rd-juneberry-original-imaggdkhabdvykjz.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Printed Round Neck Pure Cotton Red T-Shirt",
+            "name": "TShirt",
+            "price": "69",
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
+            "id": 23
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/kq2o2vk0/track-pant/u/a/e/3xl-wm21-jog-d05-pink-alan-jones-original-imag466rhyheuuqk.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Solid pink Track Pants",
+            "name": "Track Pant",
+            "price": "75",
+            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
+            "id": 24
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/kb5eikw0/jean/q/r/l/34-mss20wjn026-metronaut-original-imafskbyzscgfkta.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Skinny Mid Rise Blue Jeans",
+            "name": "Jeans",
+            "price": "66",
+            "description": "Discover our slim fit denim jeans, the perfect blend of style and comfort. Made from high-quality denim fabric, these jeans offer a modern and flattering fit. The slim cut sits close to the body without feeling restrictive. With their versatile design, they can be dressed up or down for various occasions. Pair them with a casual t-shirt and sneakers for a laid-back look, or dress them up with a button-up shirt and dress shoes for a more polished ensemble. These jeans feature classic five-pocket styling and are available in different washes to suit your preference. Upgrade your denim collection with our slim fit jeans and experience timeless style and exceptional comfort.",
+            "id": 25
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/kzn17680/jean/k/c/c/-original-imagbhuhc7ha8zhe.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Regular Mid Rise Grey Jeans",
+            "name": "Jeans",
+            "price": "89",
+            "description": "Discover our slim fit denim jeans, the perfect blend of style and comfort. Made from high-quality denim fabric, these jeans offer a modern and flattering fit. The slim cut sits close to the body without feeling restrictive. With their versatile design, they can be dressed up or down for various occasions. Pair them with a casual t-shirt and sneakers for a laid-back look, or dress them up with a button-up shirt and dress shoes for a more polished ensemble. These jeans feature classic five-pocket styling and are available in different washes to suit your preference. Upgrade your denim collection with our slim fit jeans and experience timeless style and exceptional comfort.",
+            "id": 26
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/track-pant/b/e/j/xl-wm19-jog-basic-pista-alan-jones-original-imaggdy6bnqtgytz.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Regular Mid Rise Grey Jeans",
+            "name": "Track Pant",
+            "price": "62",
+            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
+            "id": 27
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/l37mtu80/t-shirt/v/7/k/xxl-uzwtop-42-stone-uzarus-original-imagee6nycegzhk6.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Colorblock Round Neck Polyester Black T-Shirt",
+            "name": "Track Pant",
+            "price": "38",
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
+            "id": 28
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/xif0q/short/p/7/t/32-rt3-t50-a-okay-original-imafjz9psbrgezkg-bb.jpeg?q=70",
+            "gender": "womens",
+            "title": "Dyed/Washed Women Denim Dark Blue Hotpants",
+            "name": "Jeans",
+            "price": "75",
+            "description": "Discover our slim fit denim jeans, the perfect blend of style and comfort. Made from high-quality denim fabric, these jeans offer a modern and flattering fit. The slim cut sits close to the body without feeling restrictive. With their versatile design, they can be dressed up or down for various occasions. Pair them with a casual t-shirt and sneakers for a laid-back look, or dress them up with a button-up shirt and dress shoes for a more polished ensemble. These jeans feature classic five-pocket styling and are available in different washes to suit your preference. Upgrade your denim collection with our slim fit jeans and experience timeless style and exceptional comfort.",
+            "id": 29
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/kk76wsw0/t-shirt/k/2/z/l-de-7071-peach-perfktu-original-imafzhm9tgqybdqs.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Solid High Neck Polyester Pink T-Shirt",
+            "name": "TShirt",
+            "price": "69",
+            "description": "Stay cool and comfortable during your workouts with our athletic performance t-shirts. Designed with moisture-wicking technology, these t-shirts keep you dry by pulling sweat away from your body. The lightweight and breathable fabric provide maximum airflow, allowing you to stay focused and perform at your best. With their ergonomic design and stretchy material, these t-shirts offer a full range of motion, making them perfect for activities like running, gym workouts, or sports. Elevate your athletic wardrobe with these high-performance t-shirts.",
+            "id": 30
+        },
+        {
+            "img1": "https://rukminim1.flixcart.com/image/832/832/k30h8y80/track-pant/m/z/p/l-m7-wm-t06-bck-m7-by-metronaut-original-imafg997db3z4r3a.jpeg?q=70",
+            "gender": "womens",
+            "title": "Women Solid Black Track Pants",
+            "name": "Track Pant",
+            "price": "70",
+            "description": "Experience comfort and style with our athletic track pants. Made from high-quality performance fabric, these track pants are designed to keep up with your active lifestyle. The moisture-wicking technology keeps you dry and comfortable during workouts or sports activities. The elastic waistband with an adjustable drawstring ensures a secure and personalized fit. With their tapered design and ribbed cuffs, these track pants offer a modern and athletic look. They feature side pockets to conveniently store small essentials. Whether you're hitting the gym, going for a run, or simply running errands, our athletic track pants are the perfect choice for both performance and style.",
+            "id": 31
+        },
+        {
+            "img1": "https://cdn.shopify.com/s/files/1/0752/6435/products/IMG_0043_4d81c6fa-5783-4baa-81f2-43b183e05466_765x.jpg?v=1674813294",
+            "gender": "mens",
+            "title": "VIBRANT FLORAL PRINT SHIRT",
+            "name": "Shirt",
+            "price": "55",
+            "description": "A premium printed shirt in flowy fabric. Regular collar. Short sleeve. Button fastening on the front section.\n\n-A bold printed short sleeve shirt.\n-Can be worn for casual outings.\n-Liked by Father and Son age groups\n-Regular collar\n-100% Viscose printed fabric\n-Short Sleeves.\n-Tailored Fit / Perfected pattern after extensive research on body measurements.\n-Hand Wash - For detailed instructions- follow the wash-care label on the garment.\n-Can be paired with Rare Rabbit Trousers.",
+            "id": 32
+        },
+        {
+            "img1": "https://cdn.shopify.com/s/files/1/0752/6435/files/IMG_0013_62b7dfa1-924d-4306-80bf-c5b01f607bca_765x.jpg?v=1688020105",
+            "gender": "mens",
+            "title": "SMART CARGO PANTS",
+            "name": "Jeans",
+            "price": "77",
+            "description": "- Stay comfortable and stylish on any occasion with these beige slim fit trousers from RARE RABBIT.\n\n- Crafted of a polyester-cotton blend, the bellow pocket cargo pants feature 6 pocket detailing for convenience.\n\n- The perfect combination of form and function.",
+            "id": 33
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-white-attempting-to-adult-graphic-printed-oversized-t-shirt-530393-1682403578-1.jpg",
+            "gender": "womens",
+            "title": "Women's White Attempting To Adult Graphic Printed Oversized T-shirt",
+            "name": "TShirt",
+            "price": "88",
+            "description": "Our girls' t-shirt features a vibrant and eye-catching design that adds a playful flair to any outfit. Whether it's a cute animal motif, a trendy graphic print, or a charming pattern, we offer a wide variety of options to suit every girl's unique style. Let her express her personality and stand out from the crowd with our carefully curated designs.",
+            "id": 34
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-purple-one-strong-army-graphic-printed-oversized-t-shirt-516914-1667499532-1.jpg",
+            "gender": "womens",
+            "title": "Women's Purple One Strong Army Graphic Printed Oversized T-shirt",
+            "name": "TShirt",
+            "price": "87",
+            "description": "With its durable construction and excellent craftsmanship, our girls' t-shirt is built to last. It withstands the active lifestyle of young girls, ensuring long-lasting wear and enjoyment. It's also easy to care for, making laundry days a breeze for busy parents.",
+            "id": 35
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/men-s-beast-breathing-graphic-printed-oversized-t-shirt-602531-1688121367-1.jpg",
+            "gender": "mens",
+            "title": "Men's Black Beast Breathing Graphic Printed Oversized T-shirt",
+            "name": "TShirt",
+            "price": "99",
+            "description": "Made from soft and breathable fabric, this t-shirt ensures all-day comfort, allowing boys to move freely and enjoy their activities with ease. The lightweight material keeps them cool during warm weather and provides a cozy layer during cooler seasons.",
+            "id": 36
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-grey-striped-trackpants-597977-1687337768-3.jpg",
+            "gender": "womens",
+            "title": "Women's Grey Striped Track Pants",
+            "name": "Track Pant",
+            "price": "67",
+            "description": "Crafted from high-quality and soft fabric, our women's track pants provide exceptional comfort and ease of movement. The breathable material ensures optimal airflow, keeping you cool and dry during your workouts or casual outings. Whether you're hitting the gym, going for a jog, or simply running errands, these track pants offer the perfect balance of comfort and style.",
+            "id": 37
+        },
+        {
+            "img1": "https://images.bewakoof.com/t96/men-s-grey-color-blocked-track-pants-589588-1681808083-3.jpg",
+            "gender": "mens",
+            "title": "Men's Grey Color Blocked Track Pants",
+            "name": "Track Pant",
+            "price": "92",
+            "description": "Introducing our stylish and comfortable track pants for women, designed to elevate your athleisure game. These track pants are the perfect blend of fashion and functionality, offering a versatile option for both workouts and casual wear.",
+            "id": 38
+        },
+        {
+            "img1": "https://images.bewakoof.com/t96/black-denim-jeans-479358-1680593129-4.jpg",
+            "gender": "mens",
+            "title": "Men's Black Denim Jeans",
+            "name": "Jeans",
+            "price": "99",
+            "description": "Available in a range of sizes, our track pants offer a comfortable and flattering fit for women of all body types. Please refer to our size chart to find your perfect fit and enjoy the confidence that comes with wearing well-fitted jeans.",
+            "id": 39
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-black-starboi-graphic-printed-t-shirt-519263-1682403917-1.jpg",
+            "gender": "womens",
+            "title": "Women's Black Starboi Graphic Printed T-shirt",
+            "name": "TShirt",
+            "price": "75",
+            "description": "Designed for durability, these track pants are made to withstand your active lifestyle. The high-quality construction ensures long-lasting wear, allowing you to enjoy them for seasons to come. They are also easy to care for, making them a practical choice for everyday wear.",
+            "id": 40
+        },
+        {
+            "img1": "https://images.bewakoof.com/t96/men-s-light-grey-joggers-293064-1684494342-5.jpg",
+            "gender": "mens",
+            "title": "Men's Light Grey Joggers",
+            "name": "Track Pant",
+            "price": "119",
+            "description": "Crafted with care, our track pants are made from premium-quality, breathable fabric that keeps you cool and dry during your most intense workouts. The moisture-wicking properties ensure that sweat is quickly absorbed, allowing you to stay comfortable and focused. Whether you're hitting the gym, going for a run, or practicing yoga, these track pants provide the ultimate comfort and flexibility.",
+            "id": 41
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-tie-dye-oversize-plain-t-shirt-574159-1684998920-1.jpg",
+            "gender": "womens",
+            "title": "Women's White & Pink Ombre Printed Oversized Short Top",
+            "name": "TShirt",
+            "price": "85",
+            "description": "Made from soft and breathable fabric, this t-shirt ensures all-day comfort, allowing you to move freely and embrace any activity with ease. The lightweight material keeps you cool during warm days and provides a cozy layer during cooler seasons, making it a versatile choice for year-round wear.",
+            "id": 42
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/men-s-white-slim-fit-shirt-4mss1987-02-602368-1687962160-1.jpg",
+            "gender": "mens",
+            "title": "Men's White Slim Fit Shirt",
+            "name": "Shirt",
+            "price": "105",
+            "description": "Designed for effortless style, this t-shirt pairs easily with a variety of bottoms, from jeans and shorts to skirts and leggings. Whether you're heading to the office, meeting friends for brunch, or simply running errands, this t-shirt is the perfect go-to piece that can be dressed up or down for any occasion.",
+            "id": 43
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/men-s-olive-green-shirt-597367-1687273901-1.jpg",
+            "gender": "mens",
+            "title": "Men's Olive Green Shirt",
+            "name": "Shirt",
+            "price": "109",
+            "description": "Our shirt features a stylish and on-trend design that adds a touch of personality to any outfit. Whether it's a classic solid color, a vibrant pattern, or a trendy graphic print, we offer a wide range of options to suit your unique style. Express your individuality and make a statement with our carefully curated designs.",
+            "id": 44
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-black-bootcut-jeans-594472-1685015783-5.jpg",
+            "gender": "womens",
+            "title": "Women's Black Bootcut Jeans",
+            "name": "Jeans",
+            "price": "91",
+            "description": "Introducing our stylish and comfortable track pants for women, designed to elevate your athleisure game. These track pants are the perfect blend of fashion and functionality, offering a versatile option for both workouts and casual wear.",
+            "id": 45
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-white-peeking-army-graphic-printed-boyfriend-t-shirt-519415-1680593017-1.jpg",
+            "gender": "womens",
+            "title": "Women's White Peeking Army Graphic Printed Boyfriend T-shirt",
+            "name": "TShirt",
+            "price": "78",
+            "description": "Made from soft and breathable fabric, this t-shirt ensures all-day comfort, allowing you to move freely and embrace any activity with ease. The lightweight material keeps you cool during warm days and provides a cozy layer during cooler seasons, making it a versatile choice for year-round wear.",
+            "id": 46
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-pink-color-block-slim-fit-track-pants-512165-1660052207-6.jpg",
+            "gender": "womens",
+            "title": "Women's Pink Color Block Slim Fit Track Pants",
+            "name": "Track Pant",
+            "price": "86",
+            "description": "Available in a range of sizes, our track pants offer a comfortable and flattering fit for women of all body types. Please refer to our size chart to find your perfect fit and enjoy the confidence that comes with wearing well-fitted track pants.",
+            "id": 47
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-navy-solid-tapered-cargo-pants-7-582924-1686301980-1.jpg",
+            "gender": "womens",
+            "title": "Women's Blue Tapered Cargo Pants",
+            "name": "Track Pant",
+            "price": "107",
+            "description": "Durability is key, which is why our track pants are made to last. The high-quality construction ensures long-lasting wear, even with frequent use and washing. You can rely on these track pants to withstand the rigors of your active lifestyle, providing you with reliable comfort and style.",
+            "id": 48
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-green-shorts-584978-1679564368-5.JPG",
+            "gender": "womens",
+            "title": "Women's Green Shorts",
+            "name": "Jeans",
+            "price": "90",
+            "description": "Durability is key, which is why our track pants are made to last. The high-quality construction ensures long-lasting wear, even with frequent use and washing. You can rely on these track pants to withstand the rigors of your active lifestyle, providing you with reliable comfort and style.",
+            "id": 49
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/women-s-grey-co-ordinates-595430-1685521796-1.jpg",
+            "gender": "womens",
+            "title": "Women's Grey Co-ordinates trach with top tshirt",
+            "name": "Track Pant",
+            "price": "125",
+            "description": "Made from soft and breathable fabric, this t-shirt ensures all-day comfort, allowing you to move freely and embrace any activity with ease. The lightweight material keeps you cool during warm days and provides a cozy layer during cooler seasons, making it a versatile choice for year-round wear.",
+            "id": 50
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/men-s-khaki-solid-cargo-shorts-18-582907-1686199757-5.jpg",
+            "gender": "mens",
+            "title": "Men's Khaki Cargo Shorts",
+            "name": "Jeans",
+            "price": "68",
+            "description": "Remember to personalize the description with any specific details about the track pants, such as additional features, material composition, specific technology used, or any special promotions or discounts you may be offering.",
+            "id": 51
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/men-s-multicolor-all-over-printed-pyjamas-570857-1683281278-5.jpg",
+            "gender": "mens",
+            "title": "Men's White All Over Printed Pyjamas",
+            "name": "Track Pant",
+            "price": "69",
+            "description": "Available in a range of sizes, our track pants offer a comfortable and flattering fit for women of all body types. Please refer to our size chart to find your perfect fit and enjoy the confidence that comes with wearing well-fitted track pants.\n\nUpgrade your athleisure wardrobe with our stylish and functional track pants. Experience the perfect combination of fashion, comfort, and performance with our collection. Shop now and take your workouts and casual wear to the next level.",
+            "id": 52
+        },
+        {
+            "img1": "https://images.bewakoof.com/t1080/men-s-1white1-t-shirt-584845-1679400843-1.jpg",
+            "gender": "mens",
+            "title": "Men's White T-shirt",
+            "name": "TShirt",
+            "price": "56",
+            "description": "Made from soft and breathable fabric, this t-shirt ensures all-day comfort, allowing you to move freely and embrace any activity with ease. The lightweight material keeps you cool during warm days and provides a cozy layer during cooler seasons, making it a versatile choice for year-round wear.\n\nOur t-shirt features a stylish and on-trend design that adds a touch of personality to any outfit. Whether it's a classic solid color, a vibrant pattern, or a trendy graphic print, we offer a wide range of options to suit your unique style. Express your individuality and make a statement with our carefully curated designs.",
+            "id": 53
+        }
+    ]
+}

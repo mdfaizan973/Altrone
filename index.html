@@ -62,14 +62,15 @@
 
             <!-- Cart icon -->
             <button
-              class="btn btn-outline-secondary position-relative rounded-circle me-2"
+              class="cart-btn btn btn-outline-secondary position-relative rounded-circle m-4"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#cartDrawer"
             >
               <i class="bi bi-cart-fill fs-5"></i>
               <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge"
+                class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >0</span
               >
-                3
-              </span>
             </button>
 
             <!-- Mobile menu toggle -->
@@ -95,6 +96,26 @@
         </div>
       </nav>
     </header>
+
+    <!-- Cart Drawer -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartDrawer">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold">
+          🛒 Your Cart: <span class="cart-count">0</span>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body bg-light">
+        <div id="cart-items-list" class="d-flex flex-column gap-3"></div>
+      </div>
+      <div class="offcanvas-footer border-top p-3">
+        <button class="btn btn-dark w-100">Checkout</button>
+      </div>
+    </div>
 
     <!-- Hero  -->
     <section class="hero-section position-relative">
@@ -129,6 +150,138 @@
         </div>
       </div>
     </section>
+
+    <!-- Sorting Section -->
+    <section class="container py-4">
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3"
+      >
+        <h2 class="fw-bold display-6 mb-3 mb-md-0">Explore Our Collection</h2>
+
+        <select class="form-select w-auto">
+          <option selected disabled>Sort by Price</option>
+          <option value="low-high">Price: Low to High</option>
+          <option value="high-low">Price: High to Low</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+
+    <!-- Products Grid -->
+    <div class="container py-5">
+      <div class="row" id="product-list">
+        <!-- Products will be injected here -->
+      </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      aria-labelledby="productModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div
+          class="modal-content border-0 shadow-lg"
+          style="border-radius: 8px; overflow: hidden"
+        >
+          <!-- Modal Header -->
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title fw-bold" id="productModalLabel">
+              Product Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body p-4 bg-light">
+            <div class="row g-4 align-items-start">
+              <!-- Left: Product Image -->
+              <div class="col-md-5 text-center">
+                <img
+                  id="productImage"
+                  alt="Product Image"
+                  class="img-fluid rounded-2 shadow-sm"
+                  style="max-height: 280px; object-fit: cover"
+                />
+              </div>
+              <!-- Right: Product Info -->
+              <div class="col-md-7 d-flex flex-column justify-content-start">
+                <span
+                  id="productCategory"
+                  class="fw-bold text-primary mb-1"
+                  style="font-size: 0.85rem"
+                ></span>
+                <h3
+                  id="productTitle"
+                  class="fw-bold text-dark mb-2"
+                  style="font-size: 1.5rem"
+                ></h3>
+                <div class="d-flex align-items-center mb-2">
+                  <div id="productRating" class="text-warning fs-5 me-2"></div>
+                  <span id="productRatingValue" class="text-muted small"></span>
+                </div>
+                <div class="mb-3">
+                  <span
+                    id="productPrice"
+                    class="text-success fw-bold fs-5"
+                  ></span>
+                  <small
+                    class="text-muted text-decoration-line-through ms-2"
+                    id="productOldPrice"
+                  ></small>
+                  <span
+                    id="productDiscount"
+                    class="ms-2 text-danger fw-semibold"
+                  ></span>
+                </div>
+                <p
+                  id="productDescription"
+                  class="text-secondary small mb-3"
+                  style="line-height: 1.5"
+                ></p>
+
+                <!-- Buttons -->
+                <div id="addToCartBtnContainer" class="d-flex gap-2 mb-3">
+                  <div class="col-8">
+                    <button
+                      id="addToCartBtn"
+                      class="btn btn-dark w-100 p-2 rounded-0 text-warning"
+                    >
+                      <i class="bi bi-cart-plus me-2"></i> Add to Cart
+                    </button>
+                  </div>
+                  <button
+                    class="btn btn-outline-secondary rounded-0 flex-fill"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+
+                <!-- Customer Feedback Section -->
+                <div id="customerFeedbackContainer">
+                  <h6 class="fw-bold text-dark mb-2">Customer Feedback</h6>
+                  <div
+                    id="customerFeedback"
+                    class="list-group"
+                    style="max-height: 200px; overflow-y: auto"
+                  >
+                    <!-- Reviews dynamically appended here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer-custom py-5 mt-50">
