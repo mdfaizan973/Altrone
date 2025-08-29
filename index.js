@@ -21,24 +21,28 @@ const features = [
   },
 ];
 
-const container = document.getElementById("features-container");
+$(document).ready(function () {
+  const $container = $("#features-container");
 
-features.forEach((feature) => {
-  container.innerHTML += `
-      <div class="col-6 col-md-3 mb-4">
-        <div class="d-flex flex-column align-items-center">
-          <div class="d-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle mb-3" style="width:60px; height:60px;">
-            <i class="bi ${feature.icon}" style="font-size:1.5rem;"></i>
+  $.each(features, function (index, feature) {
+    const featureHTML = `
+        <div class="col-6 col-md-3 mb-4">
+          <div class="d-flex flex-column align-items-center">
+            <div class="d-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle mb-3" style="width:60px; height:60px;">
+              <i class="bi ${feature.icon}" style="font-size:1.5rem;"></i>
+            </div>
+            <h5 class="fw-semibold">${feature.title}</h5>
+            <p class="text-muted small">${feature.description}</p>
           </div>
-          <h5 class="fw-semibold">${feature.title}</h5>
-          <p class="text-muted small">${feature.description}</p>
         </div>
-      </div>
-    `;
+      `;
+    $container.append(featureHTML);
+  });
 });
 
 let productsList = [];
 let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+let currentProductModal = null;
 
 $(document).ready(function () {
   renderCart();
@@ -118,6 +122,7 @@ function renderStars(rating) {
 $(document).on("click", ".product-image", function () {
   const idProduct = parseInt($(this).data("id"));
   const product = productsList.find((p) => p.id === idProduct);
+  currentProductModal = product;
 
   if (product) {
     $("#productImage").attr("src", product.img1);
@@ -172,9 +177,11 @@ function renderFeedback(reviews = []) {
 function renderCart() {
   const $cartList = $("#cart-items-list");
   $cartList.empty();
+  let total = 0;
   const items = JSON.parse(localStorage.getItem("cartItems")) || [];
-  console.log(174, items);
+
   items.forEach((product) => {
+    total += parseFloat(product.price);
     const card = $(`
                 <div class="card shadow-sm border-0 rounded-3">
                   <div class="card-body d-flex align-items-center">
@@ -188,33 +195,44 @@ function renderCart() {
                 </div>`);
     $cartList.append(card);
   });
+
+  $("#cart-total").text(`${total.toFixed(2)}`);
   updateCartCount();
 }
+
+// .cart-total class name get the total of the cart
 
 // Submit Cart
 $(document).on("click", ".add-to-cart-btn", function (e) {
   e.preventDefault();
 
-  const idProduct = parseInt($(this).data("id"));
+  let idProduct = $(this).data("id");
+  let product;
+
+  if (idProduct) {
+    product = productsList.find((p) => p.id === parseInt(idProduct));
+  } else if (currentProductModal) {
+    product = currentProductModal;
+  }
+
+  if (!product) return;
+
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-  const isPresent = cartItems.some((ele, i) => ele.id == idProduct);
+  const isPresent = cartItems.some((item) => item.id === product.id);
 
   if (isPresent) {
     alert("Already Present in the Cart!");
   } else {
-    const product = productsList.find((p) => p.id === idProduct);
-
-    if (product) {
-      cartItems.push(product);
-      localStorage.setItem("cartItems", JSON.stringify(cartItems));
-      renderCart();
-      updateCartCount();
-      alert("Item addd to Cart!");
-    }
+    cartItems.push(product);
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    renderCart();
+    updateCartCount();
+    alert("Item added to Cart!");
+    $("#addToCartBtnContainer").addClass("d-none");
   }
 });
 
-// Remove from cart with slide animation
+// Remove from cart
 $(document).on("click", ".remove-item", function () {
   const idToRemove = parseInt($(this).data("id"));
   const $card = $(this).closest(".card");

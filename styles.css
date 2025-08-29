@@ -8,6 +8,15 @@ header nav {
   transition: all 0.3s ease;
 }
 
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.752); /* more transparent */
+  backdrop-filter: blur(10px); /* stronger blur */
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  margin-bottom: 10px;
+}
+
 /* Logo */
 .logo-box {
   width: 36px;
@@ -106,6 +115,7 @@ nav a.nav-link:hover::after {
   transform: translate(-50%, -50%);
   z-index: 2;
   padding: 0 15px;
+  margin-top: 20px;
 }
 
 .bottom-col {
