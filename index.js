@@ -278,6 +278,70 @@ $(document).on("click", "#continueShopping", function () {
   window.location.reload();
 });
 
-$(document).on("click", "#guide-btn-as-text", function () {
-  $("#userGuideModal").modal("show");
+// user guide
+const userGuide = [
+  {
+    id: 1,
+    title: "Clean & Responsive UI",
+    description: "Layout adjusts for mobile, tablet, and desktop.",
+  },
+  {
+    id: 2,
+    title: "Interactive Dashboard",
+    description: "Dashboard widgets highlight on hover.",
+  },
+  {
+    id: 3,
+    title: "Product Listing",
+    description: "Products appear in a grid layout.",
+  },
+  {
+    id: 4,
+    title: "Search Products",
+    description: "Smart search input to quickly find products.",
+  },
+  {
+    id: 5,
+    title: "Sort Products",
+    description: "Sort by price, popularity, etc.",
+  },
+  {
+    id: 6,
+    title: "Product Details",
+    description: "Click on product image to open details modal.",
+  },
+  {
+    id: 7,
+    title: "Add to Cart",
+    description: "Add product to cart from card or modal.",
+  },
+  {
+    id: 8,
+    title: "Remove from Cart",
+    description: "Remove items from the cart drawer.",
+  },
+  {
+    id: 9,
+    title: "Checkout",
+    description: "Open modal with order summary on checkout.",
+  },
+  {
+    id: 10,
+    title: "Animations / Effects",
+    description: "Subtle animations on UI elements for better UX.",
+  },
+];
+
+$(document).ready(function () {
+  userGuide.forEach((f) => {
+    $("#featuresList").append(`
+        <li class="list-group-item d-flex align-items-center">
+          <span class="badge bg-info me-3">${f.id}</span>
+          <div>
+            <strong>${f.title}</strong><br/>
+            ${f.description}
+          </div>
+        </li>
+      `);
+  });
 });
