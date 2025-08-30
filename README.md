@@ -29,5 +29,5 @@ Welcome to **Fizzy Cloths**, your one-stop online store for the latest trends in
 - **Styling & UI Enhancements**: Responsive design, animations, hover effects  
 
 ---
-
+Created By: **Md Faizan**
 
