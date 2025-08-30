@@ -44,6 +44,47 @@ let productsList = [];
 let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 let currentProductModal = null;
 
+// Load and render products
+function renderProducts(products) {
+  let html = "";
+  $.each(products, function (index, product) {
+    html += `
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card border-0 shadow card-hover h-100">
+          <img src="${
+            product.img1
+          }" class="product-image rounded-2 cursor-pointer" alt="${
+      product.title
+    }" data-id=${product.id}>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <h5 class="card-title">${product.title}</h5>
+                <p class="card-text">
+                  <span class="text-warning">${renderStars(
+                    product.rating || 1
+                  )}</span>
+                </p>
+              </div>
+              <i class="bi bi-bookmark-plus fs-4"></i>
+            </div>
+          </div>
+          <div class="row g-0 align-items-center text-center border-top">
+            <div class="col-4">
+              <h5>$${product.price}</h5>
+            </div>
+            <div class="add-to-cart-btn col-8" data-id=${product.id}>
+              <a href="#" class="btn btn-dark w-100 p-2 rounded-0 text-warning">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+  $("#product-list").html(html);
+}
+
+// Initial load
 $(document).ready(function () {
   renderCart();
 
@@ -53,44 +94,7 @@ $(document).ready(function () {
     dataType: "json",
     success: function (data) {
       productsList = data.products;
-      let html = "";
-
-      $.each(productsList, function (index, product) {
-        html += `
-       <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-          <div class="card border-0 shadow card-hover h-100">
-            <img src="${
-              product.img1
-            }" class="product-image rounded-2 cursor-pointer" alt="${
-          product.title
-        }" data-id=${product.id}>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-start">
-                <div>
-                  <h5 class="card-title">${product.title}</h5>
-                  <p class="card-text">
-                  <span class="text-warning">${renderStars(
-                    product.rating || 1
-                  )} </span> </p>
-                </div>
-                <i class="bi bi-bookmark-plus fs-4"></i>
-              </div>
-            </div>
-            <div class="row g-0 align-items-center text-center border-top">
-              <div class="col-4">
-                <h5>$${product.price}</h5>
-              </div>
-              <div class="add-to-cart-btn col-8" data-id=${product.id}>
-                <a href="#" class="btn btn-dark w-100 p-2 rounded-0 text-warning">ADD TO CART</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-      });
-
-      // Append all cards at once
-      $("#product-list").html(html);
+      renderProducts(productsList);
       updateCartCount();
     },
     error: function () {
@@ -99,6 +103,26 @@ $(document).ready(function () {
       );
     },
   });
+});
+
+// Search functionality
+$(".search-input").on("input", function () {
+  const searchValue = $(this).val().toLowerCase();
+
+  const filteredProducts = productsList.filter((product) => {
+    const titleMatch =
+      product.title && product.title.toLowerCase().includes(searchValue);
+    const genderMatch =
+      product.gender && product.gender.toLowerCase().includes(searchValue);
+    const categoryMatch =
+      product.category && product.category.toLowerCase().includes(searchValue);
+    const nameMatch =
+      product.name && product.name.toLowerCase().includes(searchValue);
+
+    return titleMatch || genderMatch || categoryMatch || nameMatch;
+  });
+
+  renderProducts(filteredProducts);
 });
 
 function updateCartCount() {
@@ -210,22 +234,16 @@ function renderCart() {
     });
   }
 
-  //   $("#cart-total").text(`${total.toFixed(2)}`);
   updateCartTotal();
   updateCartCount();
 }
 
 function updateCartTotal() {
-  // Get cart items from localStorage
   const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-  // Calculate total
   const total = cartItems.reduce((acc, item) => {
-    // Ensure price is a number
     return acc + parseFloat(item.price || 0);
   }, 0);
 
-  // Update total in the DOM
   $("#cart-total").text(total.toFixed(2));
 }
 
