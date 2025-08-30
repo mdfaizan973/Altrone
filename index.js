@@ -44,44 +44,69 @@ let productsList = [];
 let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 let currentProductModal = null;
 
-// Load and render products
 function renderProducts(products) {
+  const $productList = $("#product-list");
+
+  if (!products || products.length === 0) {
+    $productList.html(`
+      <div class="text-center text-muted w-100 py-5">
+        <i class="bi bi-cart-x display-1 mb-3"></i>
+        <p class="h5">No products found</p>
+      </div>
+    `);
+    return;
+  }
+
+  $productList.css("opacity", 0);
   let html = "";
+
   $.each(products, function (index, product) {
     html += `
-      <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
-        <div class="card border-0 shadow card-hover h-100">
-          <img src="${
-            product.img1
-          }" class="product-image rounded-2 cursor-pointer" alt="${
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 product-animate" style="transform: translateY(30px) scale(0.95); opacity:0; transition: all 0.4s ease ${
+      index * 0.05
+    }s;">
+      <div class="card border-0 shadow card-hover h-100">
+        <img src="${
+          product.img1
+        }" class="product-image rounded-2 cursor-pointer" alt="${
       product.title
     }" data-id=${product.id}>
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start">
-              <div>
-                <h5 class="card-title">${product.title}</h5>
-                <p class="card-text">
-                  <span class="text-warning">${renderStars(
-                    product.rating || 1
-                  )}</span>
-                </p>
-              </div>
-              <i class="bi bi-bookmark-plus fs-4"></i>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <h5 class="card-title">${product.title}</h5>
+              <p class="card-text"><span class="text-warning">${renderStars(
+                product.rating || 1
+              )}</span></p>
             </div>
+            <i class="bi bi-bookmark-plus fs-4"></i>
           </div>
-          <div class="row g-0 align-items-center text-center border-top">
-            <div class="col-4">
-              <h5>$${product.price}</h5>
-            </div>
-            <div class="add-to-cart-btn col-8" data-id=${product.id}>
-              <a href="#" class="btn btn-dark w-100 p-2 rounded-0 text-warning">ADD TO CART</a>
-            </div>
+        </div>
+        <div class="row g-0 align-items-center text-center border-top">
+          <div class="col-4">
+            <h5>$${product.price}</h5>
+          </div>
+          <div class="add-to-cart-btn col-8" data-id=${product.id}>
+            <a href="#" class="btn btn-dark w-100 p-2 rounded-0 text-warning">ADD TO CART</a>
           </div>
         </div>
       </div>
+    </div>
     `;
   });
-  $("#product-list").html(html);
+
+  $productList.html(html);
+
+  $(".product-animate").each(function (i, el) {
+    setTimeout(() => {
+      $(el).css({
+        transform: "translateY(0) scale(1)",
+        opacity: 1,
+      });
+    }, i * 100);
+  });
+
+  $productList.css("opacity", 1);
 }
 
 // Initial load
@@ -106,25 +131,31 @@ $(document).ready(function () {
 });
 
 // Search functionality
+let debounceTimeout;
+
 $(".search-input").on("input", function () {
-  const searchValue = $(this).val().toLowerCase();
+  clearTimeout(debounceTimeout);
+  const input = $(this);
 
-  const filteredProducts = productsList.filter((product) => {
-    const titleMatch =
-      product.title && product.title.toLowerCase().includes(searchValue);
-    const genderMatch =
-      product.gender && product.gender.toLowerCase().includes(searchValue);
-    const categoryMatch =
-      product.category && product.category.toLowerCase().includes(searchValue);
-    const nameMatch =
-      product.name && product.name.toLowerCase().includes(searchValue);
+  debounceTimeout = setTimeout(() => {
+    const searchValue = input.val().toLowerCase();
 
-    return titleMatch || genderMatch || categoryMatch || nameMatch;
-  });
+    const filteredProducts = productsList.filter((product) => {
+      return (
+        (product.title && product.title.toLowerCase().includes(searchValue)) ||
+        (product.gender &&
+          product.gender.toLowerCase().includes(searchValue)) ||
+        (product.category &&
+          product.category.toLowerCase().includes(searchValue)) ||
+        (product.name && product.name.toLowerCase().includes(searchValue))
+      );
+    });
 
-  renderProducts(filteredProducts);
+    renderProducts(filteredProducts);
+  }, 800);
 });
 
+// Sorting functionality
 $("#sortProductByPrice").on("change", function () {
   const sortValue = $(this).val();
   let sortedProducts = [...productsList];
@@ -135,6 +166,7 @@ $("#sortProductByPrice").on("change", function () {
     sortedProducts.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
   }
 
+  // Animate on sorting
   renderProducts(sortedProducts);
 });
 
@@ -266,7 +298,10 @@ $(document).on("click", ".add-to-cart-btn", function (e) {
   e.preventDefault();
 
   let idProduct = $(this).data("id");
-  let product = productsList.find((p) => p.id === parseInt(idProduct));
+  let product = idProduct
+    ? productsList.find((p) => p.id === parseInt(idProduct))
+    : currentProductModal;
+
   if (!product) return;
 
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
@@ -277,40 +312,47 @@ $(document).on("click", ".add-to-cart-btn", function (e) {
     return;
   }
 
-  // Fly animation
-  let $img = $(this).closest(".card").find("img.product-image");
-  let $flyImg = $img.clone().addClass("product-fly");
-  $("body").append($flyImg);
+  if (idProduct) {
+    let $img = $(this).closest(".card").find("img.product-image");
+    let $flyImg = $img.clone().addClass("product-fly");
+    $("body").append($flyImg);
 
-  let cartOffset = $(".cart-btn").offset();
-  let imgOffset = $img.offset();
+    let cartOffset = $(".cart-btn").offset();
+    let imgOffset = $img.offset();
 
-  $flyImg.css({
-    top: imgOffset.top,
-    left: imgOffset.left,
-    width: $img.width(),
-    height: $img.height(),
-  });
-
-  setTimeout(() => {
     $flyImg.css({
-      top: cartOffset.top + 10,
-      left: cartOffset.left + 10,
-      width: 20,
-      height: 20,
-      opacity: 0.5,
+      top: imgOffset.top,
+      left: imgOffset.left,
+      width: $img.width(),
+      height: $img.height(),
     });
-  }, 10);
 
-  $flyImg.on("transitionend", function () {
-    $flyImg.remove();
+    setTimeout(() => {
+      $flyImg.css({
+        top: cartOffset.top + 10,
+        left: cartOffset.left + 10,
+        width: 20,
+        height: 20,
+        opacity: 0.5,
+      });
+    }, 10);
 
+    $flyImg.on("transitionend", function () {
+      $flyImg.remove();
+
+      cartItems.push(product);
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      renderCart();
+      updateCartCount();
+      $("#addToCartBtnContainer").addClass("d-none");
+    });
+  } else {
     cartItems.push(product);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     renderCart();
     updateCartCount();
     $("#addToCartBtnContainer").addClass("d-none");
-  });
+  }
 });
 
 // Remove from cart
