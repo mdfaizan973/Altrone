@@ -191,10 +191,21 @@ nav a.nav-link:hover::after {
 .card-title {
   font-size: 1.1rem;
   font-weight: 600;
-  /* width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; */
+}
+
+.category-btn {
+  border-radius: 0.35rem; /* slightly rounded */
+  border: 1px solid #6c757d;
+  padding: 0.5rem 1.2rem;
+  transition: all 0.3s ease;
+}
+.category-active {
+  background-color: #000000;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.category-btn:hover {
+  transform: translateY(-2px);
 }
 /* footer */
 .footer-custom {
