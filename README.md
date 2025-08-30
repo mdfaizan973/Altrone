@@ -4,6 +4,12 @@ Welcome to **Fizzy Cloths**, your one-stop online store for the latest trends in
 
 ---
 
+# 🌐 Live Project
+
+Check out the live project here: https://altrone-cloths.vercel.app/
+
+---
+
 ## 🌟 Features
 
 - **Responsive UI**: Works seamlessly on mobile, tablet, and desktop devices.  
