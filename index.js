@@ -125,6 +125,19 @@ $(".search-input").on("input", function () {
   renderProducts(filteredProducts);
 });
 
+$("#sortProductByPrice").on("change", function () {
+  const sortValue = $(this).val();
+  let sortedProducts = [...productsList];
+
+  if (sortValue === "low-high") {
+    sortedProducts.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+  } else if (sortValue === "high-low") {
+    sortedProducts.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+  }
+
+  renderProducts(sortedProducts);
+});
+
 function updateCartCount() {
   const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   $(".cart-count").text(cartItems.length);
