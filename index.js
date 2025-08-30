@@ -215,6 +215,8 @@ $(".search-input").on("input", function () {
 
 // Sorting functionality
 $("#sortProductByPrice").on("change", function () {
+  $(".category-btn").first().click();
+
   const sortValue = $(this).val();
   let sortedProducts = [...productsList];
 
@@ -225,7 +227,6 @@ $("#sortProductByPrice").on("change", function () {
   }
 
   renderProducts(sortedProducts);
-  $(".category-btn").first().click();
 });
 
 // Category filter
