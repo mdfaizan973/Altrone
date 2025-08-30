@@ -103,7 +103,6 @@ $(document).ready(function () {
 
 function updateCartCount() {
   const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-  console.log(cartItems);
   $(".cart-count").text(cartItems.length);
 }
 
@@ -211,38 +210,76 @@ function renderCart() {
     });
   }
 
-  $("#cart-total").text(`${total.toFixed(2)}`);
+  //   $("#cart-total").text(`${total.toFixed(2)}`);
+  updateCartTotal();
   updateCartCount();
 }
 
+function updateCartTotal() {
+  // Get cart items from localStorage
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+  // Calculate total
+  const total = cartItems.reduce((acc, item) => {
+    // Ensure price is a number
+    return acc + parseFloat(item.price || 0);
+  }, 0);
+
+  // Update total in the DOM
+  $("#cart-total").text(total.toFixed(2));
+}
+
 // Submit Cart
+
 $(document).on("click", ".add-to-cart-btn", function (e) {
   e.preventDefault();
 
   let idProduct = $(this).data("id");
-  let product;
-
-  if (idProduct) {
-    product = productsList.find((p) => p.id === parseInt(idProduct));
-  } else if (currentProductModal) {
-    product = currentProductModal;
-  }
-
+  let product = productsList.find((p) => p.id === parseInt(idProduct));
   if (!product) return;
 
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   const isPresent = cartItems.some((item) => item.id === product.id);
 
   if (isPresent) {
-    alert("Already Present in the Cart!");
-  } else {
+    alert("Already in Cart!");
+    return;
+  }
+
+  // Fly animation
+  let $img = $(this).closest(".card").find("img.product-image");
+  let $flyImg = $img.clone().addClass("product-fly");
+  $("body").append($flyImg);
+
+  let cartOffset = $(".cart-btn").offset();
+  let imgOffset = $img.offset();
+
+  $flyImg.css({
+    top: imgOffset.top,
+    left: imgOffset.left,
+    width: $img.width(),
+    height: $img.height(),
+  });
+
+  setTimeout(() => {
+    $flyImg.css({
+      top: cartOffset.top + 10,
+      left: cartOffset.left + 10,
+      width: 20,
+      height: 20,
+      opacity: 0.5,
+    });
+  }, 10);
+
+  $flyImg.on("transitionend", function () {
+    $flyImg.remove();
+
     cartItems.push(product);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     renderCart();
     updateCartCount();
-    alert("Item added to Cart!");
     $("#addToCartBtnContainer").addClass("d-none");
-  }
+  });
 });
 
 // Remove from cart
@@ -256,6 +293,7 @@ $(document).on("click", ".remove-item", function () {
     cartItems = cartItems.filter((item) => item.id !== idToRemove);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     updateCartCount();
+    updateCartTotal();
   });
 });
 
