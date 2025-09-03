@@ -450,15 +450,54 @@ $(document).on("click", "#checkout", function () {
     alert("Your cart is empty!");
     return;
   }
-  $("#orderSuccessModal").modal("show");
+  $("#checkoutModal").modal("show");
+});
+
+$(document).ready(function () {
+  $("#pay-btn").on("click", function (e) {
+    e.preventDefault();
+
+    let fullName = $("#fullName").val().trim();
+    let email = $("#email").val().trim();
+    let cardNumber = $("#cardNumber").val().trim();
+    let expiryDate = $("#expiryDate").val().trim();
+    let cvv = $("#cvv").val().trim();
+    let zipCode = $("#zipCode").val().trim();
+    let address = $("#address").val().trim(); // new field
+
+    const items = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    if (
+      !fullName ||
+      !email ||
+      !cardNumber ||
+      !expiryDate ||
+      !cvv ||
+      !zipCode ||
+      !address
+    ) {
+      alert("All fields are required!");
+    } else {
+      let message = `Hi ${fullName}, your email is ${email}. Your card number ending with ${cardNumber.slice(
+        -4
+      )} (exp: ${expiryDate}, CVV: ${cvv}) has been used. You have ordered ${
+        items.length
+      } item(s). Your order will be shipped to: ${address}, ZIP: ${zipCode}.`;
+
+      alert(message);
+      localStorage.removeItem("cartItems");
+      $("#cart-items-list").empty();
+      $(".cart-total").text("0");
+      updateCartCount();
+
+      $("#checkoutModal").modal("hide");
+      $("#orderSuccessModal").modal("show");
+    }
+  });
 });
 
 // Continue shopping
 $(document).on("click", "#continueShopping", function () {
-  localStorage.removeItem("cartItems");
-  $("#cart-items-list").empty();
-  $(".cart-total").text("0");
-  updateCartCount();
   window.location.reload();
 });
 
